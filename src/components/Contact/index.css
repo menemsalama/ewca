@@ -9,17 +9,18 @@
 }
 
 .Contact-container .Contact-img {
-  flex: 2;
+  flex: 1;
   padding: 1rem;
 }
 
 .Contact-container .Contact-img img {
   border-radius: 50%;
   width: 100%;
+  object-fit: contain;
 }
 
 .Contact-container .Contact-data {
-  flex: 8;
+  flex: 6;
   text-align: left;
   padding-top: 1rem;
 }
