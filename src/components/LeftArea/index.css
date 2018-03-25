@@ -1,0 +1,20 @@
+.Left-area header {
+  background-color: #eeeeee;
+  height: 59px;
+}
+
+.Left-area .notifications-popup {
+  background-color: #9de1fe;
+  height: 89px;
+}
+
+.Left-area .search-input-container {
+  background-color: #fbfbfb;
+  height: 49px;
+}
+
+.Left-area .contacts-list-conatiner {
+  height: calc(100% - 213px);
+  overflow-y: scroll;
+  /* scroll color #cdcdcd*/
+}

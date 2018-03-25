@@ -1,0 +1,33 @@
+.Contact-container {
+  display: flex;
+  height: 72px;
+}
+
+.Contact-container:hover {
+  background-color: #f4f5f5;
+  cursor: pointer;
+}
+
+.Contact-container .Contact-img {
+  flex: 2;
+  padding: 1rem;
+}
+
+.Contact-container .Contact-img img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.Contact-container .Contact-data {
+  flex: 8;
+  text-align: left;
+  padding-top: 1rem;
+}
+
+.Contact-container .Contact-date {
+  flex: 2;
+  padding-top: 1rem;
+  padding-right: .5rem;
+}
+
+/*#e5ddd5*/

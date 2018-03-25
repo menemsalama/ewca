@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { data as users_data } from './data/users.json';
 import './App.css';
 
 import { MainLoader } from "./components/MainLoader";
 import { BodyWrapper } from "./components/BodyWrapper";
+import { LeftArea } from "./components/LeftArea";
+import { MainArea } from "./components/MainArea";
+import { Contact } from "./components/Contact";
 
 class App extends Component {
   constructor(props) {
@@ -21,15 +24,23 @@ class App extends Component {
   }
 
   render() {
+    console.log(users_data);
     if (this.state.isLoading) {
-        return <MainLoader />
+      return <MainLoader />
     }
 
     return (
       <BodyWrapper>
-        test {JSON.stringify(this.state, null, 2)}
+        <LeftArea>
+          {this.renderContacts()}
+        </LeftArea>
+        <MainArea></MainArea>
       </BodyWrapper>
     );
+  }
+
+  renderContacts() {
+    return users_data.map(user => <Contact {...user} />)
   }
 }
 
