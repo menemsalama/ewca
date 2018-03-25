@@ -1,6 +1,16 @@
 import React from "react";
 
-export const MainArea = () => {
+export const MainArea = ({ children }) => {
+  if (children !== null) {
+    return (
+      <div className="Main-area">
+        <div>
+          {children}
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="Main-area">
       <div>
