@@ -1,17 +1,86 @@
 .Left-area header {
   background-color: #eeeeee;
-  height: 59px;
+  height: 55px;
+  display: flex;
+  padding: .1rem 0;
+}
+
+.Left-area header .user-avatar {
+  flex: 2;
+  padding: .3rem;
+}
+
+.Left-area header .icons-bar {
+  flex: 12;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.Left-area header .icons-bar span {
+  margin: auto .5rem;
+  padding: .1rem;
+}
+
+.Left-area header img {
+  max-width: 100%;
+  object-fit: contain;
+  max-height: 100%;
+  border-radius: 50%;
 }
 
 .Left-area .notifications-popup {
   background-color: #9de1fe;
   height: 89px;
+  display: flex;
 }
+
+.Left-area .notifications-popup .icon {
+  flex: 2;
+  margin: auto;
+}
+
+.Left-area .notifications-popup .content {
+  flex: 8;
+  margin: auto 0;
+  text-align: left;
+}
+.Left-area .notifications-popup .content strong, .Left-area .notifications-popup .content small {
+  display: block;
+}
+.Left-area .notifications-popup .content a {
+  text-decoration: underline;
+}
+.Left-area .notifications-popup .content a:hover {
+  cursor: pointer;
+}
+
 
 .Left-area .search-input-container {
   background-color: #fbfbfb;
   height: 49px;
 }
+.Left-area .search-input-container {
+  display: flex;
+  padding: .2rem 1rem;
+  background: #fbfbfb;
+}
+.Left-area .search-input-container span {
+  flex: 1;
+  margin: auto;
+  background: white;
+}
+.Left-area .search-input-container input {
+  background: white;
+  flex: 8;
+  border: none;
+  line-height: 20px;
+  font-size: 15px;  outline: none;
+  height: 20px;
+  margin: auto;
+}
+
+/*.Left-area .search-input-container */
+
 
 .Left-area .contacts-list-conatiner {
   height: calc(100% - 213px);
