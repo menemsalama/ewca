@@ -44,6 +44,18 @@
   margin: auto 0;
   text-align: left;
 }
+.Left-area .notifications-popup .content strong {
+  font-size: 16px;
+  line-height: 21px;
+  color: #37474f;
+  font-weight: normal;
+}
+.Left-area .notifications-popup .content small {
+  font-size: 14px;
+  line-height: 19px;
+  color: #37474f;
+  opacity: 0.6;
+}
 .Left-area .notifications-popup .content strong, .Left-area .notifications-popup .content small {
   display: block;
 }

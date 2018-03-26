@@ -1,0 +1,120 @@
+.Chat-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.Chat-container .Top-bar {
+  display: flex;
+  height: 59px;
+  background: #eee;
+}
+.Chat-container .Chat-log {
+  flex: 1;
+  background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+}
+.Chat-container .Bottom-bar {
+  background: #eee;
+  height: 59px;
+}
+
+.Chat-container .Top-bar div:nth-child(1) {
+  flex: 1;
+  max-width: 60px;
+  padding: .5rem;
+}
+.Chat-container .Top-bar div:nth-child(1) img {
+  height: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+.Chat-container .Top-bar div:nth-child(2) {
+  margin: auto;
+  padding: 0 .5rem;
+}
+.Chat-container .Top-bar div:nth-child(3) {
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+.Chat-container .Chat-log {
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  padding: 2rem 0;
+}
+.Chat-container .Chat-log .message-left {
+  text-align: left;
+}
+.Chat-container .Chat-log .message-right {
+  text-align: right;
+}
+
+.Chat-container .Chat-log .message-right, .Chat-container .Chat-log .message-left {
+  margin: .25rem 5rem;
+
+}
+
+.Chat-container .Chat-log .message-right div, .Chat-container .Chat-log .message-left div {
+  padding: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13.6px;
+  line-height: 19px;
+  color: #262626;
+  display: inline-block;
+  position: relative;
+}
+.Chat-container .Chat-log .message-left div {
+  background: #fff;
+}
+.Chat-container .Chat-log .message-right div {
+  background: #dcf8c6;
+}
+
+.Chat-container .Chat-log .message-left div.message-content:after{
+	content: ' ';
+	position: absolute;
+  left: -10px;
+  top: 0px;
+	border: 22px solid;
+	border-color: #fff transparent transparent transparent;
+}
+
+.Chat-container .Chat-log .message-right div.message-content:after{
+	content: ' ';
+	position: absolute;
+  right: -10px;
+  top: 0px;
+	border: 22px solid;
+	border-color: #dcf8c6 transparent transparent transparent;
+}
+
+.Chat-container .Bottom-bar {
+  display: flex;
+}
+.Chat-container .Bottom-bar div:nth-child(1){
+  width: 59px;
+  margin: auto;
+}
+.Chat-container .Bottom-bar div:nth-child(2){
+  flex: 1;
+}
+.Chat-container .Bottom-bar div:nth-child(3){
+  width: 59px;
+  margin: auto;
+  padding-left: 1rem;
+}
+
+.Chat-container .Bottom-bar div:nth-child(2) input {
+  width: 100%;
+  height: 90%;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  padding: 0 .5rem;
+}
